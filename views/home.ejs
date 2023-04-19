@@ -10,8 +10,122 @@
 
       </div>
       <div class="buttons-container">
-        <input class="round-filled-btn" type="button" value="Get Started" >
+        <button class="round-filled-btn">Get Started</button>
       </div>
 </section>
+
+<style>
+.gigs-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  background: #f2f2f2;
+  padding: 16rem;
+  padding-bottom: 20rem;
+}
+
+.card-container {
+  max-width: 300px;
+  box-shadow: 5px 5px 20px #b8b8b8,
+              -5px -5px 20px #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 40px #b8b8b8,
+              -10px -10px 40px #ffffff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-head img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  flex: 1;
+  padding: 20px;
+}
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 60px;
+  background: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+
+.card-container:hover .card-footer {
+  transform: translateY(0);
+}
+
+.card-footer button {
+  margin-bottom: 1rem;
+  border: none;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px #b8b8b8,
+              -3px -3px 10px #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.card-footer button:hover {
+  transform: scale(1.1);
+}
+
+
+
+</style>
+
+<section class="gigs-section">
+  <div class="card-container">
+    <div class="card">
+      <div class="card-head">
+        <img src="https://venues.be/wp-content/uploads/2021/03/BDG06796.jpg" alt="" srcset="">
+      </div>
+      <div class="card-body">
+        <p>This is a sample text</p>
+      </div>
+      <div class="card-footer">
+        <button>HIRE NOW</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-head">
+        <img src="https://venues.be/wp-content/uploads/2021/03/BDG06796.jpg" alt="" srcset="">
+      </div>
+      <div class="card-body">
+        <p>This is a sample text</p>
+      </div>
+      <div class="card-footer">
+        <button>HIRE NOW</button>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
 
 <%- include("footer") -%>
