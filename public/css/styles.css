@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    z-index: 10;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+    padding-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #56a9b8;
+}
+
+.footer p {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #fff;
+}
+
+section {
+    
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    overflow: hidden;
+   
+}
+
+.bg-image {
+    background-size: covefr;
+    background-position: center;
+
+    height: 100%;
+    width: 100%;
+    z-index: -9;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.bg-image::before {
+    z-index: -9;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.322);
+    /* semi-transparent black */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.bg-image:hover::before {
+    opacity: 1;
+}
+
+.bg-image:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    z-index: -10;
+}
+
+.title-container {
+    position: absolute;
+    /* position the title container absolutely */
+    top: 50%;
+    /* position it at the vertical center of the section */
+    left: 50%;
+    /* position it at the horizontal center of the section */
+    transform: translate(-50%, -50%);
+    /* center the title container */
+}
+
+.title {
+    font-size: 4rem;
+    /* or any other font size */
+    color: #fff;
+    /* or any other color */
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.buttons-container {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 8rem;
+    left: 0;
+    right: 0;
+}
+
+
+
+.round-filled-btn {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #fff;
+    margin: 1rem;
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+
+.round-filled-btn:hover {
+    z-index: 1;
+    background-color: rgb(204, 129, 31);
+}
